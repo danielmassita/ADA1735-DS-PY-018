@@ -137,7 +137,7 @@ jupyter notebook projeto_final.ipynb
 
 3. **A cozinha é o principal driver do ticket** (ε² ≈ 0,18 — efeito **grande**; H4, p < 0,001). Japonesa tem ticket mediano ~R$ 105 vs. Doces ~R$ 30. Cidades e plataformas são praticamente homogêneas (H5, V de Cramér ≈ 0,06 — **negligenciável**). *Por que importa:* qualquer estratégia de preço/marketing deve ser **segmentada por cozinha** — tratar "cliente do app" como média geral esconde a realidade.
 
-4. **A chuva atrasa as entregas, mas o efeito é pequeno** (~+3 min, d ≈ 0,25; H1, p < 0,001). *Por que importa:* ação localizada (mais entregadores em dias de chuva em Rio e BH) e comunicação proativa ao cliente ("pode atrasar um pouco mais em dias de chuva"), não revisão de SLA nacional.
+4. **A chuva atrasa as entregas, mas o efeito é pequeno** (~+9 min, d ≈ 0,25; H1, p < 0,001). *Por que importa:* ação localizada (mais entregadores em dias de chuva em Rio e BH) e comunicação proativa ao cliente ("pode atrasar um pouco mais em dias de chuva"), não revisão de SLA nacional.
 
 5. **Julho dobrou o volume diário e o ano cresceu ~5% (Q1→Q4).** A média de pedidos/dia saltou de ~22 para ~45 em julho, com uso de cupom indo de ~22% para ~85%; fora de julho, o patamar volta ao anterior (Tarefas 6.7 e 6.9). *Por que importa:* o crescimento é **campanha**, não tendência orgânica — a diretoria deve tratar **cupom como alavanca comprovada** para 2025, com ajuste fino de margem.
 
@@ -146,7 +146,7 @@ jupyter notebook projeto_final.ipynb
 
 | Hipótese | Teste | p-valor | Efeito | Decisão | Em linguagem de negócio |
 |---|---|---|---|---|---|
-| H1 chuva × tempo de entrega | t de Welch (unicaudal) | < 0,001 | **+3 min** (d ≈ 0,25) | Rejeitar H0 | Chuva atrasa, mas efeito pequeno — ação localizada |
+| H1 chuva × tempo de entrega | t de Welch (unicaudal) | < 0,001 | **+9 min** (d ≈ 0,25) | Rejeitar H0 | Chuva atrasa, mas efeito pequeno — ação localizada |
 | H2 cupom × ticket | Mann-Whitney | < 0,001 | **−R$ 12** na mediana | Rejeitar H0 | Cupom reduz ticket, como esperado |
 | H3 tempo × avaliação | Spearman + Mann-Whitney | < 0,001 | **−0,4 ponto** acima de 35 min | Rejeitar H0 | Tempo derruba a avaliação |
 | H4 cozinha × ticket | Kruskal-Wallis + ANOVA | < 0,001 | **ε² ≈ 0,18** (grande) | Rejeitar H0 | Cozinha é o principal driver do ticket |
@@ -162,8 +162,8 @@ jupyter notebook projeto_final.ipynb
 | # | Recomendação | Achados que sustentam | Métrica para acompanhar |
 |---|---|---|---|
 | 1 | **Replicar a campanha "Julho de cupons" em 2025, com cupom segmentado por cozinha** (cupom maior em Japonesa/Pizza, menor em Doces) | Achado 2 (cupom = 35% novos), Achado 3 (cozinha = driver do ticket), H2 (cupom reduz R$ 12) | **% de cliente novo** e **margem média por pedido** (não só volume) |
-| 2 | **Revisar o SLA de 45 min: prometer 60 min para todos, ou 45 min só para pedidos < 5 km e sem chuva** | Achado 1 (avaliação cai após 35 min), Achado 4 (chuva +3 min), Tarefa 5.4 (~22% quebram 45 min) | **% de entregas acima do SLA** e **avaliação média** dos pedidos que quebram |
-| 3 | **Reforçar capacidade operacional em dias de chuva em Rio e BH** (mais entregadores, comunicação proativa "pode atrasar") | Achado 4 (chuva +3 min), Tarefa 6.2 (tempos homogêneos entre cidades) | **Tempo médio em dias de chuva** por cidade e **% acima de 45 min** |
+| 2 | **Revisar o SLA de 45 min: prometer 60 min para todos, ou 45 min só para pedidos < 5 km e sem chuva** | Achado 1 (avaliação cai após 35 min), Achado 4 (chuva +9 min), Tarefa 5.4 (~22% quebram 45 min) | **% de entregas acima do SLA** e **avaliação média** dos pedidos que quebram |
+| 3 | **Reforçar capacidade operacional em dias de chuva em Rio e BH** (mais entregadores, comunicação proativa "pode atrasar") | Achado 4 (chuva +9 min), Tarefa 6.2 (tempos homogêneos entre cidades) | **Tempo médio em dias de chuva** por cidade e **% acima de 45 min** |
 
 ---
 
