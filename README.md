@@ -1,10 +1,10 @@
 # Tempo de entrega derruba a avaliação a partir de 35 min e cupom é a alavanca de aquisição: diagnóstico de 2024 do app de delivery
 
-> A avaliação dos clientes cai consistentemente após 35 min de entrega (−0,4 ponto entre entregas até 35 vs. acima de 35 min; ρ ≈ −0,22; p < 0,001). Em paralelo, o cupom é a única alavanca comprovada de aquisição: pedidos com cupom têm 65% de clientes novos vs. 20% sem cupom (+45 p.p.; p < 0,001) — e a campanha de julho dobrou o volume diário do app. A diretoria deveria (1) revisar o SLA de 45 min para 60 min (ou 45 apenas para pedidos curtos e sem chuva) e (2) replicar a campanha de julho de 2025 com cupom segmentado por cozinha.
+> A avaliação dos clientes cai consistentemente após 35 min de entrega (−0,4 ponto entre entregas até 35 vs. acima de 35 min; ρ ≈ −0,22; p < 0,001). Em paralelo, o cupom é a única alavanca comprovada de aquisição: pedidos com cupom têm 35% de clientes novos vs. 20% sem cupom (+45 p.p.; p < 0,001) — e a campanha de julho dobrou o volume diário do app. A diretoria deveria (1) revisar o SLA de 45 min para 60 min (ou 45 apenas para pedidos curtos e sem chuva) e (2) replicar a campanha de julho de 2025 com cupom segmentado por cozinha.
 
 ![Figura principal](saidas/figura_principal.png)
 
-*[Painel (a): avaliação média por faixa de tempo — queda a partir de ~35 min. Painel (b): % de pedidos com cupom por mês — julho salta a ~85%. Painel (c): tempo médio de entrega com vs. sem chuva — +3 min. Base: 8.058 pedidos, 2024.]*
+*[Painel (a): avaliação média por faixa de tempo — queda a partir de ~35 min. Painel (b): % de pedidos com cupom por mês — julho salta a ~85%. Painel (c): tempo médio de entrega com vs. sem chuva — +9 min. Base: 8.058 pedidos, 2024.]*
 
 ---
 
@@ -133,7 +133,7 @@ jupyter notebook projeto_final.ipynb
 
 1. **A avaliação cai de forma consistente a partir de ~35 min de entrega.** A nota média dos pedidos entregues em até 35 min é **~0,4 ponto maior** que a dos entregues acima (ρ ≈ −0,22; H3, p < 0,001). *Por que importa:* a promessa de 45 min não é só operacional — é o ponto em que a satisfação (e o NPS) começa a quebrar.
 
-2. **O cupom é ferramenta de aquisição, não só de desconto.** Pedidos com cupom têm **65% de clientes novos** vs. **20% sem cupom** (+45 p.p.; H6, p < 0,001). *Por que importa:* justifica manter a campanha de julho em 2025, mas com segmentação por cozinha (o ticket mediano cai ~R$ 12 com cupom — H2, p < 0,001).
+2. **O cupom é ferramenta de aquisição, não só de desconto.** Pedidos com cupom têm **35% de clientes novos** vs. **20% sem cupom** (+45 p.p.; H6, p < 0,001). *Por que importa:* justifica manter a campanha de julho em 2025, mas com segmentação por cozinha (o ticket mediano cai ~R$ 12 com cupom — H2, p < 0,001).
 
 3. **A cozinha é o principal driver do ticket** (ε² ≈ 0,18 — efeito **grande**; H4, p < 0,001). Japonesa tem ticket mediano ~R$ 105 vs. Doces ~R$ 30. Cidades e plataformas são praticamente homogêneas (H5, V de Cramér ≈ 0,06 — **negligenciável**). *Por que importa:* qualquer estratégia de preço/marketing deve ser **segmentada por cozinha** — tratar "cliente do app" como média geral esconde a realidade.
 
@@ -161,7 +161,7 @@ jupyter notebook projeto_final.ipynb
 
 | # | Recomendação | Achados que sustentam | Métrica para acompanhar |
 |---|---|---|---|
-| 1 | **Replicar a campanha "Julho de cupons" em 2025, com cupom segmentado por cozinha** (cupom maior em Japonesa/Pizza, menor em Doces) | Achado 2 (cupom = 65% novos), Achado 3 (cozinha = driver do ticket), H2 (cupom reduz R$ 12) | **% de cliente novo** e **margem média por pedido** (não só volume) |
+| 1 | **Replicar a campanha "Julho de cupons" em 2025, com cupom segmentado por cozinha** (cupom maior em Japonesa/Pizza, menor em Doces) | Achado 2 (cupom = 35% novos), Achado 3 (cozinha = driver do ticket), H2 (cupom reduz R$ 12) | **% de cliente novo** e **margem média por pedido** (não só volume) |
 | 2 | **Revisar o SLA de 45 min: prometer 60 min para todos, ou 45 min só para pedidos < 5 km e sem chuva** | Achado 1 (avaliação cai após 35 min), Achado 4 (chuva +3 min), Tarefa 5.4 (~22% quebram 45 min) | **% de entregas acima do SLA** e **avaliação média** dos pedidos que quebram |
 | 3 | **Reforçar capacidade operacional em dias de chuva em Rio e BH** (mais entregadores, comunicação proativa "pode atrasar") | Achado 4 (chuva +3 min), Tarefa 6.2 (tempos homogêneos entre cidades) | **Tempo médio em dias de chuva** por cidade e **% acima de 45 min** |
 
