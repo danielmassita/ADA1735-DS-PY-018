@@ -191,7 +191,7 @@ jupyter notebook projeto_final.ipynb
 
 | Nome | GitHub | Principais contribuições |
 |---|---|---|
-| [Daniel Massita Tonolli] | [@danielmassita] | [CEO de MEI - TBN sem Função - Sindicalita - Pai - Revolucionário] |
+| Daniel Massita Tonolli | https://github.com/danielmassita/ | CEO de MEI - TBN sem Função - Sindicalita - Pai - Revolucionário - Crítico de quem ganha mais do que vale... |
 
 
 *Projeto final do módulo DS-PY-018 · Análise Exploratória de Dados · [ADA1735, Novembro/2026]*
