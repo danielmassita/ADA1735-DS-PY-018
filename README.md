@@ -64,8 +64,8 @@ A diretoria do app de delivery vai planejar 2025 e pediu um diagnóstico de 2024
 ## 3. Como rodar
 
 ```bash
-git clone [https://github.com/danielmassita/ADA1735-DS-PY-018/tree/main]
-cd [../ADA1735-DS-PY-018]
+git clone https://github.com/danielmassita/ADA1735-DS-PY-018/tree/main
+cd ADA1735-DS-PY-018
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 jupyter notebook projeto_final.ipynb
