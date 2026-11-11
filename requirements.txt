@@ -1,0 +1,21 @@
+# ============================================================
+# Projeto Final — EDA do app de delivery (DS-PY-018 · CaixaVerso)
+# Python 3.11 (recomendado). Compatível com 3.10+.
+# Instalação: pip install -r requirements.txt
+# ============================================================
+
+# --- Análise de dados ---------------------------------------
+pandas==2.2.2
+numpy==1.26.4
+scipy==1.11.4
+
+# --- Visualização -------------------------------------------
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# --- Ambiente de notebook -----------------------------------
+jupyter==1.0.0
+
+# --- Opcional: só se você mantém o notebook em formato .py --
+# (jupytext permite abrir projeto_final.py como notebook)
+# jupytext==1.16.1
