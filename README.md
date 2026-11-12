@@ -193,6 +193,10 @@ jupyter notebook projeto_final.ipynb
 |---|---|---|
 | Daniel Massita Tonolli | https://github.com/danielmassita/ | Pai e Marido - CEO de MEI - TBN sem Função - Sindicalita - Revolucionário - Crítico de quem ganha mais do que vale... |
 
+## 11. Vídeo de 7' (assistir em 1,2x)
+
+https://www.loom.com/share/3469b38735f44e6b98c1223a766b5fbb
+
 
 *Projeto final do módulo DS-PY-018 · Análise Exploratória de Dados · [ADA1735, Novembro/2026]*
 
