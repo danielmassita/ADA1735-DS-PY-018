@@ -197,6 +197,15 @@ jupyter notebook projeto_final.ipynb
 
 https://www.loom.com/share/3469b38735f44e6b98c1223a766b5fbb
 
+<div>
+    <a href="https://www.loom.com/share/3469b38735f44e6b98c1223a766b5fbb">
+      <p>Diagnóstico do Delivery 2024 e Recomendações 2025 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/3469b38735f44e6b98c1223a766b5fbb">
+      <img style="max-width:300px;" src="https://www.loom.com/v1/videos/3469b38735f44e6b98c1223a766b5fbb/thumbnail.gif">
+    </a>
+  </div>
+
 
 *Projeto final do módulo DS-PY-018 · Análise Exploratória de Dados · [ADA1735, Novembro/2026]*
 
