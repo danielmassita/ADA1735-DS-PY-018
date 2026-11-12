@@ -146,12 +146,12 @@ jupyter notebook projeto_final.ipynb
 
 | Hipótese | Teste | p-valor | Efeito | Decisão | Em linguagem de negócio |
 |---|---|---|---|---|---|
-| H1 chuva × tempo de entrega | t de Welch (unicaudal) | < 0,001 | **+9 min** (d ≈ 0,25) | Rejeitar H0 | Chuva atrasa, mas efeito pequeno — ação localizada |
-| H2 cupom × ticket | Mann-Whitney | < 0,001 | **−R$ 12** na mediana | Rejeitar H0 | Cupom reduz ticket, como esperado |
-| H3 tempo × avaliação | Spearman + Mann-Whitney | < 0,001 | **−0,4 ponto** acima de 35 min | Rejeitar H0 | Tempo derruba a avaliação |
-| H4 cozinha × ticket | Kruskal-Wallis + ANOVA | < 0,001 | **ε² ≈ 0,18** (grande) | Rejeitar H0 | Cozinha é o principal driver do ticket |
-| H5 cidade × forma de pagamento | χ² de independência | < 0,01 | **V ≈ 0,06** (negligenciável) | Rejeitar H0 (efeito irrelevante) | Cidade não segmenta pagamento |
-| H6 cupom × cliente novo | z de proporções + χ² | < 0,001 | **+23 p.p.** | Rejeitar H0 | Cupom é ferramenta de aquisição |
+| H1 chuva × tempo de entrega | t de Welch (unicaudal) | < 0,001 | **+9 min** (d ≈ 0,25) | Aviso no App (chuva = possível atraso) + +Entregadores | Chuva atrasa, mas efeito pequeno — ação localizada |
+| H2 cupom × ticket | Mann-Whitney | < 0,001 | **−R$ 12** na mediana | Teste de Elasticidade (A/B) | Cupom reduz ticket, como esperado (mas pode compensar no volume) |
+| H3 tempo × avaliação | Spearman + Mann-Whitney | < 0,001 | **−0,4 ponto** acima de 35 min | Alterar promessa SLA para 60' e restringir campanhas cf. distância e clima  | Tempo derruba a avaliação |
+| H4 cozinha × ticket | Kruskal-Wallis + ANOVA | < 0,001 | **ε² ≈ 0,18** (grande) | Atuar com cupons/mkt específicos por "tipo" para não "comer a margem" | Cozinha é o principal driver do ticket |
+| H5 cidade × forma de pagamento | χ² de independência | < 0,01 | **V ≈ 0,06** (negligenciável) | Manter SLA (efeito irrelevante) - Verificar margem de custo "cada meio" e direcionar camapnhas futuramente (cartões possuem mais taxas que pix) | Cidade não segmenta pagamento |
+| H6 cupom × cliente novo | z de proporções + χ² | < 0,001 | **+23 p.p.** | Cupom e Frete Grátis precisam ser testados enquanto trade-off (Custos vs. Volume) | Cupom é ferramenta de aquisição |
 
 > **Leitura da tabela:** todas as 6 hipóteses rejeitam H0. O que separa "importante" de "só significante" é o **tamanho de efeito**: H4 e H6 têm efeito grande; H1 e H5 têm efeito pequeno/negligenciável.
 
